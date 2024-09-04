@@ -78,6 +78,7 @@ jobs:
             goarch: arm64
           - goos: android
             goarch: arm
+            goarm: 7
           # END Android ARM64 ARM
       fail-fast: false
 
