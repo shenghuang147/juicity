@@ -73,10 +73,12 @@ jobs:
           - goos: windows
             goarch: arm64
           # END Windows ARM64 AMD64
-          # BEGIN Android ARM64
+          # BEGIN Android ARM64 ARM32
           - goos: android
             goarch: arm64
-          # END Android ARM64
+          - goos: android
+            goarch: arm32
+          # END Android ARM64 ARM32
       fail-fast: false
 
     runs-on: ubuntu-latest
